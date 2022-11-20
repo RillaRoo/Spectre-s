@@ -1,8 +1,9 @@
 body.index{
-    background: rgb(56, 56, 2);
-    background: radial-gradient(circle, rgb(65, 56, 0) 0%, rgb(0, 0, 0) 100%);
+    background-image: url("background.jpg");
+    background-size:100%;
     color:azure;
     text-align: center;
+    overflow: hidden;
 }
 .navbar{
     width: 85%;
@@ -13,7 +14,7 @@ body.index{
     justify-content: space-between;
 }
 .logo{
-    width: 120px;
+    width: 150px;
     cursor: pointer;
 }
 .navbar ul li{
