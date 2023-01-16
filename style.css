@@ -1,9 +1,30 @@
+img{
+    border-radius: 20%;
+    width:25%; 
+    height:25%;
+}
+@media only screen and (max-width: 600px) {
+    img {
+       width: 75%; 
+       height: 75%;
+    }
+ }
 body.index{
     background-image: url("background.jpg");
     background-size:100%;
     color:azure;
     text-align: center;
     overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+    body.index {
+        background-size:500%;
+    }
+ }
+@media only screen and (min-width: 600px) {
+    body.index{
+      background-size:100%;
+    }
 }
 .navbar{
     width: 85%;
@@ -51,7 +72,7 @@ body.index{
     color:#fff;
 }
 .content h1{
-   font-size: 70px;
+   font-size: 5vw;
    margin-top: 80px;
 }
 .content p{
@@ -93,33 +114,60 @@ button:hover{
 text{
     text-align: center;
 }
-body.universe{
-    background: rgb(112, 12, 81);
-    background: radial-gradient(circle, rgb(27, 1, 75) 0%, rgb(0, 0, 0) 100%);
-    color:azure;
-    text-align: center;
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 200% 50%; }
 }
-body.life{
-    background: rgb(112, 12, 81);
-    background: radial-gradient(circle, rgb(1, 109, 39) 0%, rgb(0, 0, 0) 100%);
+  
+body.universe {
+    background: radial-gradient(circle, #000b18, #11006e);
+    background-size:200%;
     color:azure;
     text-align: center;
+    overflow: hidden;
+    animation: gradient 40s ease infinite;
+  }
+body.life{
+    background: radial-gradient(circle, #000b18, #006e09);
+    background-size:200%;
+    color:azure;
+    text-align: center;
+    overflow: hidden;
+    animation: gradient 40s ease infinite;
 }
 body.existence{
-    background: rgb(112, 12, 81);
-    background: radial-gradient(circle, rgb(108, 0, 13) 0%, rgb(0, 0, 0) 100%);
+    background: radial-gradient(circle, #000b18, #6e0000);
+    background-size:200%;
     color:azure;
     text-align: center;
+    overflow: hidden;
+    animation: gradient 40s ease infinite;
 }
 body.anxiety{
-    background: rgb(112, 12, 81);
-    background: radial-gradient(circle, rgb(0, 117, 111) 0%, rgb(0, 0, 0) 100%);
+    background: radial-gradient(circle, #000b18, #006e5f);
+    background-size:200%;
     color:azure;
     text-align: center;
+    overflow: hidden;
+    animation: gradient 40s ease infinite;
 }
 body.doubt{
-    background: rgb(112, 12, 81);
-    background: radial-gradient(circle, rgb(151, 78, 0) 0%, rgb(0, 0, 0) 100%);
+    background: radial-gradient(circle, #000b18, #6e3500);
+    background-size:200%;
     color:azure;
     text-align: center;
+    overflow: hidden;
+    animation: gradient 40s ease infinite;
+}
+body.randpoems{
+    background: radial-gradient(circle, #000b18, #a000a0);
+    background-size:200%;
+    color:azure;
+    text-align: center;
+    overflow: hidden;
+    animation: gradient 40s ease infinite;
+}
+#poemcontainer{
+    line-height: 100%;
 }
